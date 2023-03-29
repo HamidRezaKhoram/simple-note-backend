@@ -31,11 +31,11 @@ var (
 	
 )
 func init() {
-	if port := os.Getenv("PORT"); port != "" {
-		app.Listen(":" + port)
-	} else {
-		app.Listen(":8080")
-	}
+    // if port := os.Getenv("PORT"); port != "" {
+    //     app.Listen(":" + port)
+    // } else {
+    //     app.Listen(":8080")
+    // }
 }
 
 
@@ -90,7 +90,7 @@ func main() {
 			"success": true,
 			"path":    "public"})
 	})
-	if err := app.Listen(":8080"); err != nil {
-		panic(err)
-	}
+	if err := app.Listen(":" + os.Getenv("PORT")); err != nil {
+        panic(err)
+    }
 }
