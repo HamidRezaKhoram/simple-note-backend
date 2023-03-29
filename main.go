@@ -13,7 +13,7 @@ import (
 
 var (
 	config = Config{
-		dsn: os.Getenv("DATABASE_URL"),
+		dsn: os.Getenv("DATABASE_URL") + "?sslmode=require",
 	}
 	db = func() *gorm.DB {
 		
@@ -30,6 +30,18 @@ var (
 	validate = validator.New()
 	
 )
+func init() {
+	if port := os.Getenv("PORT"); port != "" {
+		app.Listen(":" + port)
+	} else {
+		app.Listen(":8080")
+	}
+}
+
+
+
+
+
 
 func main() {
 	app.Use(cors.New())
