@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
@@ -12,12 +13,7 @@ import (
 
 var (
 	config = Config{
-		host:     "simple-notes-db-1",
-		port:     "5432",
-		password: "postgres",
-		user:     "postgres",
-		sslMode:  "disable",
-		name:     "simple_notes",
+		dsn: os.Getenv("DATABASE_URL"),
 	}
 	db = func() *gorm.DB {
 		
@@ -37,7 +33,7 @@ var (
 
 func main() {
 	app.Use(cors.New())
-	fmt.Println(fmt.Sprintln("Connected to", config.host, "as", config.user))
+	fmt.Println(fmt.Sprintln("Connected to", "server", "as", "hamid"))
 
 	app.Get("/", getDefault)
 
