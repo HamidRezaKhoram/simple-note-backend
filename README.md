@@ -70,4 +70,4 @@ The `migrateAll` function in `main.go` is used to migrate the database. It migra
 Note: All endpoints except for `/public` require authentication using a JSON Web Token (JWT) in the `Authorization` header.
 
 ### 
-#### With a lot of 💛&☕ this project has been done!
+#### With a lot of 💛&☕ this project has come to this!
