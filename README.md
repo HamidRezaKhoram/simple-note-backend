@@ -1,5 +1,5 @@
 # Go API with Gorm and Postgres
-###This repository is the backend of [simple-note](https://simple-notes.hamidrezakhoramrokh.ir/) that connects the database to the [frontend](https://github.com/HamidRezaKhoram/simple-notes-frontend)
+This repository is the backend of [simple-note](https://simple-notes.hamidrezakhoramrokh.ir/) that connects the database to the [frontend](https://github.com/HamidRezaKhoram/simple-notes-frontend)
 ##
 This is a Go API using [Gorm](https://gorm.io/) as an ORM and [Postgres](https://www.postgresql.org/) as a database.
 ## Developers
