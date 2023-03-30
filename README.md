@@ -1,5 +1,5 @@
 # Go API with Gorm and Postgres
-###This repository is the backend of our [Simple-note](https://simple-note.hamidrezakhoramrokh.ir/)
+###This repository is the backend of our [simple-note](https://simple-notes.hamidrezakhoramrokh.ir/)
 This is a Go API using [Gorm](https://gorm.io/) as an ORM and [Postgres](https://www.postgresql.org/) as a database.
 ## Developers
 This API was developed by [Daniel Ibanescu](https://github.com/zazu7765) and [Hamidreza Khoramrokh](https://github.com/HamidRezaKhoram/).
