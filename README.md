@@ -1,6 +1,6 @@
 # Go API with Gorm and Postgres
 
-This is a Go API using [Gorm](https://gorm.io/) as an ORM and [Postgres](https://www.postgresql.org/) as a database.
+This is a Go API using [Gorm](https://gorm.io/) as an ORM and [Postgres](https://www.postgresql.org/) as a database written by [Daniel Ibanescu](https://github.com/zazu7765)
 
 ## Installation
 
